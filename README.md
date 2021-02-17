@@ -1,5 +1,8 @@
 # offline_oddo_api
 
+## the problem
+* 2 apps one offline and other hosted online, when the offline has internet access send the data to the online (both oddo apps)
+
 https://pypi.org/project/Flask-Odoo/
 
 
