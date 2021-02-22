@@ -49,3 +49,19 @@ models.execute_kw(db, uid, password,'res.partner', 'search_read',[[['is_company'
 models.execute_kw(db, uid, password,'res.partner', 'search_read',[[['id', '=', 58]]],{'fields': ['name', 'country_id', 'comment']})
 ```
 
+## update recored (single)
+```
+models.execute_kw(db, uid, password, 'res.partner', 'write', [58, {'name': "Python King1"}])
+```
+
+# update multi
+[id, {'name':'new name'}] return true , it can update multi recoreds but all take same name
+
+```
+models.execute_kw(db, uid, password, 'res.partner', 'write', [[58,48], {'name': "Python King1"}])
+```
+
+### get recored name
+
+models.execute_kw(db, uid, password, 'res.partner', 'name_get', [58])
+
