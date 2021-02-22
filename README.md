@@ -65,8 +65,22 @@ models.execute_kw(db, uid, password, 'res.partner', 'write', [[58,48], {'name': 
 ```
 
 ### get recored name
-
+```
 models.execute_kw(db, uid, password, 'res.partner', 'name_get', [58])
+```
+### use ir.model (create)
+
+model name must start with x_
+
+```
+models.execute_kw(db, uid, password, 'ir.model', 'create', [{'name': "super model",'model': "x_super_model",'state': 'manual',}])
+```
+
+### get builtin fileds for my model
+
+```
+models.execute_kw(db, uid, password, 'x_super_model', 'fields_get',[], {'attributes': ['string', 'help', 'type']})
+```
 
 
 !['my own odoo api calls'](https://github.com/MahmoudHegazi/offline_oddo_api/blob/main/myodoo.JPG?raw=true)
