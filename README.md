@@ -67,4 +67,4 @@ models.execute_kw(db, uid, password, 'res.partner', 'write', [[58,48], {'name': 
 models.execute_kw(db, uid, password, 'res.partner', 'name_get', [58])
 
 
-('my own odoo api calls')[https://github.com/MahmoudHegazi/offline_oddo_api/blob/main/myodoo.JPG?raw=true]
+!('my own odoo api calls')[https://github.com/MahmoudHegazi/offline_oddo_api/blob/main/myodoo.JPG?raw=true]
