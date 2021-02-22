@@ -31,6 +31,8 @@ s.enter(60, 1, do_something, (s,))
 s.run()
 ```
 
+https://www.odoo.com/documentation/14.0/webservices/odoo.html
+
 ## contacts odoo (work with API)
 
 ### create new recored in odoo 
