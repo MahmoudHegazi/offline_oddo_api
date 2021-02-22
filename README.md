@@ -30,3 +30,22 @@ def do_something(sc):
 s.enter(60, 1, do_something, (s,))
 s.run()
 ```
+
+
+### create new recored in odoo 
+```
+id = models.execute_kw(db, uid, password, 'res.partner', 'create', [{ 'name': "Python King", }])
+```
+
+### read company
+
+```
+models.execute_kw(db, uid, password,'res.partner', 'search_read',[[['is_company', '=', True]]],{'fields': ['name', 'country_id', 'comment'], 'limit': 20})
+```
+
+### get company by id I added this
+
+```
+models.execute_kw(db, uid, password,'res.partner', 'search_read',[[['id', '=', 58]]],{'fields': ['name', 'country_id', 'comment']})
+```
+
