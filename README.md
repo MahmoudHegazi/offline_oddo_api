@@ -71,6 +71,7 @@ models.execute_kw(db, uid, password, 'res.partner', 'name_get', [58])
 ### use ir.model (create)
 
 model name must start with x_
+the state must be provided and manual, otherwise the model will not be loaded
 
 ```
 models.execute_kw(db, uid, password, 'ir.model', 'create', [{'name': "super model",'model': "x_super_model",'state': 'manual',}])
